@@ -52,7 +52,7 @@ p{
 
 .dd_row1col1, .dd_row1col2, .dd_row2col1, .dd_row3col1{
 	min-height: 320px;
-	padding: 4.5% 8%;
+	padding: 4% 8%;
 }
 .dd_row1col1{
 	background: rgb(53,54,74);
@@ -123,12 +123,6 @@ p{
 	padding-left: 6%;
     padding-right: 2.5%;
 }
-.dd_dow{
-	padding-left: calc(75% - 100px);
-}
-.dd_tod{
-	padding-left: 10%;
-}
 .dd_row4{
 	background-color: rgb(35,36,50);
 	line-height:50px;
@@ -193,6 +187,12 @@ p{
 		height: 300px;
 		min-height:300px;
 		padding: 4.5% 8%;
+	}
+	.dd_dow{
+		padding-left: calc(75% - 100px);
+	}
+	.dd_tod{
+		padding-left: 10%;
 	}
 }
 @media screen and (max-width: 575px) {
