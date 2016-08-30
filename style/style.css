@@ -120,8 +120,11 @@ p{
 	color:red;
 }
 .dd_row3col1{
-	padding-left: 6%;
+	/*padding-left: 6%;*/
     padding-right: 2.5%;
+}
+.dd_row3col1 div{
+	padding-left: 0;
 }
 .dd_row4{
 	background-color: rgb(35,36,50);
@@ -149,9 +152,6 @@ p{
 		min-height:300px;
 		padding: 4.5% 8%;
 	}
-	.dd_row1col2 h3{
-		font-size: 2.1em;
-	}
 
 	.dd_input{
 		width: calc(50% - 10px);
@@ -160,9 +160,6 @@ p{
 	.dd_row3col1 .dd_hours, .dd_row3col2 .dd_hours{
 		float:left;
 		width: 50%;
-	}
-	.dd_row3 h3{
-		font-size: 2.1em;
 	}
 
 	.dd_row1col2 button{
@@ -178,15 +175,21 @@ p{
 		width: calc(100% - 150px);
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.dd_row1col1{
 		height: 250px;
 		min-height: 250px;
+	}
+	.dd_row1col2 h3{
+		font-size: 2.1em;
 	}
 	.dd_row1col2{
 		height: 300px;
 		min-height:300px;
 		padding: 4.5% 8%;
+	}
+	.dd_row3 h3{
+		font-size: 2.1em;
 	}
 	.dd_dow{
 		padding-left: calc(75% - 100px);
