@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+		<!-- 
+
+		__/\\\\\\\\\\\\_______/\\\______/\\\\\\\\\_____        
+		 _\/\\\////////\\\____/\\/\\___/\\\///////\\\___       
+		  _\/\\\______\//\\\__/\\\//\\_\///______\//\\\__      
+		   _\/\\\_______\/\\\_\//__\//____________/\\\/___     
+		    _\/\\\_______\/\\\__________________/\\\//_____    
+		     _\/\\\_______\/\\\_______________/\\\//________   
+		      _\/\\\_______/\\\______________/\\\/___________  
+		       _\/\\\\\\\\\\\\/______________/\\\\\\\\\\\\\\\_ 
+		        _\////////////_______________\///////////////__
+
+		- Uses BootStrap
+		- Classes overwritten with classes starting with dd_
+        - Uses react JS
+
+
+		-->
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+
+        <meta charset="UTF-8">
+        <title>CarPages Tech Challenge</title>
+
+        <!-- FONTAWESOME -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+            <!--  -->
+        <!-- BOOTSTRAP -->
+            <!-- jQuery -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <!--  -->
+        <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+            <!--  -->
+
+        <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+  <script src="http://www.d2dev.io/carpages/bundle.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuEfpo06lWC9xWW9Qgc6xoaVWr5d9Sa3k&callback=initMap" async defer></script>
+  <script>
+      //GoogleMaps says Parkdale East Auto is at: 43.238506, -79.791545
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.238506, lng: -79.791545},
+          scrollwheel: false,
+          zoom: 14,
+          disableDefaultUI: true
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 43.238506, lng: -79.791545},
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+  </script>
+  <!--  -->
+    <link rel="stylesheet" href="/style/style.css">
+</html>
